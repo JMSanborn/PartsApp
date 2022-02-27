@@ -10,11 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PartsApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".UI.PartDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UI.PartList"
+            android:label="Part List"
+            android:parentActivityName=".UI.ProductList"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ProductList"
+            android:parentActivityName=".UI.MainActivity"
+            android:label="Product List"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

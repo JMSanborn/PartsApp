@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">PartsApp</string>
+    <string name="welcome">Welcome to My Bicycle Shop!</string>
+    <string name="enter">Enter</string>
+    <string name="intro_icon">Intro Icon</string>
+    <string name="hi_1">Hi 1</string>
+    <string name="hi_2">Hi 2</string>
+    <string name="hi_3">Hi 3</string>
+    <string name="hi_4">Hi 4</string>
+    <string name="hi_5">Hi 5</string>
+    <string name="hi_6">Hi 6</string>
+    <string name="hi_7">Hi 7</string>
+    <string name="hi_8">Hi 8</string>
+    <string name="hi_9">Hi 9</string>
+
 </resources>
