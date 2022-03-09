@@ -9,9 +9,11 @@
         <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.4185" />
         <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/layout/activity_main.xml" value="0.4370471014492754" />
         <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/layout/activity_part_detail.xml" value="0.4370471014492754" />
-        <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/layout/activity_part_list.xml" value="0.4370471014492754" />
+        <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/layout/activity_part_list.xml" value="0.44947916666666665" />
         <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/layout/activity_product_list.xml" value="0.4370471014492754" />
+        <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/layout/product_list_item.xml" value="0.4276041666666667" />
         <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/menu/menu_productlist.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/menu/partdetail.xml" value="0.4817708333333333" />
         <entry key="..\:/Users/jmsan/AndroidStudioProjects/PartsApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3165" />
       </map>
     </option>

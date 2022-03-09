@@ -9,24 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PartsApp">
+        <receiver
+            android:name=".UI.MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
         <activity
             android:name=".UI.PartDetail"
             android:exported="false" />
         <activity
             android:name=".UI.PartList"
+            android:exported="false"
             android:label="Part List"
-            android:parentActivityName=".UI.ProductList"
-            android:exported="false" />
+            android:parentActivityName=".UI.ProductList" />
         <activity
             android:name=".UI.ProductList"
-            android:parentActivityName=".UI.MainActivity"
+            android:exported="false"
             android:label="Product List"
-            android:exported="false" />
+            android:parentActivityName=".UI.MainActivity" />
         <activity
             android:name=".UI.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LinerLayout2"
     android:layout_width="match_parent"
@@ -8,15 +9,16 @@
     tools:context=".UI.PartList">
 
     <ScrollView
+        android:id="@+id/scrollview"
         android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_height="100dp"
+        android:layout_marginBottom="55dp"
+        tools:layout_editor_absoluteX="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -26,36 +28,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hi_1" />
+                android:text="@string/product_name" />
 
-            <TextView
+            <EditText
+                android:id="@+id/editProductName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hi_2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hi_3" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hi_4" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hi_5" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hi_6" />
+                android:text="@string/tricycle" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,17 +44,42 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hi_7" />
+                android:text="@string/product_price" />
 
-            <TextView
+            <EditText
+                android:id="@+id/editProductPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hi_8" />
+                android:text="@string/_50_00" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hi_9" />
-            </LinearLayout>
+                android:clickable="true"
+                android:onClick="saveButton"
+                android:text="Save"/>
+        </LinearLayout>
+
     </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:layout_width="409dp"
+        android:layout_height="300dp"
+        android:background="@color/purple_200"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="101dp"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:onClick="detailScreen"
+        app:srcCompat="@drawable/ic_baseline_add_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

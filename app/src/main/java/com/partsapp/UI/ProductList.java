@@ -2,6 +2,8 @@ package com.partsapp.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +11,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.partsapp.Database.Repository;
+import com.partsapp.Entity.Product;
 import com.partsapp.R;
+
+import java.util.List;
 
 public class ProductList extends AppCompatActivity {
 
@@ -18,6 +24,13 @@ public class ProductList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_list);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        RecyclerView recyclerView=findViewById(R.id.recyclerview);
+        Repository repository=new Repository(getApplication());
+        List<Product> products= repository.getAllProducts();
+        final ProductAdapter adapter=new ProductAdapter(this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter.setProducts(products);
 
     }
 
